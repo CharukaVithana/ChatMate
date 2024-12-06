@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #000;
+      color: #fff;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #121212;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 255, 0, 0.2);
+      max-width: 900px;
+      width: 90%;
+    }
+
+    .form {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-right: 20px;
+    }
+
+    .form h2 {
+      font-size: 2rem;
+      color: #0f0;
+      margin-bottom: 10px;
+    }
+
+    .form input {
+      padding: 15px;
+      font-size: 16px;
+      border: 1px solid #444;
+      border-radius: 5px;
+      background: #cdcdcd;
+      color: #fff;
+    }
+
+    .form input:focus {
+      outline: none;
+      border-color: rgb(58, 250, 116);
+    }
+
+    .form .options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .form button {
+      background: rgb(25, 198, 76);
+      color: #000;
+      border: none;
+      padding: 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+
+    .form button:hover {
+      background: #00b000;
+    }
+
+    .form .social {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .form .social img {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+    }
+
+    .robot {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .robot img {
+      max-width: 500px;
+      width: 100%;
+      padding-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="form">
+      <h2 style="align-items: center;">Sign In</h2>
+      
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <div class="options">
+        <label><input type="checkbox"> Remember me</label>
+        <a href="#" style="color: #0f0; text-decoration: none;">Forgot Password?</a>
+      </div>
+      <button onclick="navigateTo('MainHome.html')">Log In</button>
+      <div class="social">
+        <img src="C:\Users\HP\Desktop\ChatBot\google logo.png" alt="Google">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" alt="Facebook">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple">
+      </div>
+      <p>Don't have an account? <a href="signup.html" style="color: #0f0; text-decoration: none;">Sign Up</a></p>
+    </div>
+    <div class="robot">
+      <img src="C:\Users\HP\Desktop\ChatBot\cb.png" alt="Robot">
+    </div>
+  </div>
+  <script>
+    function navigateTo(page) {
+      window.location.href = page;
+    }
+  </script>
+</body>
+</html>

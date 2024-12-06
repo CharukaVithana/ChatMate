@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>ChatMate</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            margin: 0;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: #333;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 90%;
+            max-width: 500px;
+            color: white;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header i {
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+        .header .title {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .visualizer {
+            margin: 20px 0;
+            border-radius: 100px;
+        }
+        .controls {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .controls i {
+            font-size: 2em;
+            background-color: #555;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <i class="fas fa-arrow-left" onclick="navigateTo('MainHome.html')"></i>
+            <div class="title">Talk with ChatMate</div>
+            <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <div class="visualizer">
+            <img alt="Visualizer animation" height="300" src="C:\Users\HP\Downloads\GOOD GIF.gif" width="310" height="250" style="border-radius: 200px;">
+        </div>
+        <div class="controls">
+            <i class="fas fa-keyboard" onclick="navigateTo('chat.html')"></i>
+            <i class="fas fa-microphone"></i>
+            <i class="fas fa-times" onclick="navigateTo('MainHome.html')"></i>
+        </div>
+    </div>
+
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>

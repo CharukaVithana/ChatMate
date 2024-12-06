@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, sans-serif;
+            background: #000;
+            color: #fff;
+            height: 100%;
+            width: 100%;
+        }
+
+        .dashboard-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 100px;
+        }
+
+        /* Premium Plan Section */
+        .premium-plan {
+            background: #9bfd9b;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-radius: 15px;
+            width: 80%;
+            height: auto;
+            max-width: 800px;
+            position: relative;
+        }
+
+        .premium-content h2 {
+            color: #3ca73c;
+            margin: 0;
+        }
+
+        .premium-content p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .upgrade-btn {
+            background: #3ca73c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-right: 200px;
+        }
+
+        .upgrade-btn:hover {
+            background: #2d852d;
+        }
+
+        .premium-robot {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            right: 20px;
+            bottom: -30px;
+        }
+
+        /* Main Content */
+        .main-content {
+            display: flex;
+            width:100%;
+            max-width: 800px;
+            margin-top: 30px;
+            gap: 20px;
+        }
+
+        /* Topics Section */
+        .topics {
+            flex: 2;
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .topics h3 {
+            margin: 0 0 15px;
+            color: #00ff00;
+        }
+
+        .topic-icons {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .icon {
+            text-align: center;
+        }
+
+        .icon .circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 0 auto 10px;
+            box-shadow: 0 0 10px rgb(0, 156, 68);
+            position: relative; /* Add relative positioning */
+        }
+
+        .circle.green {
+            background: rgb(0, 156, 68);
+        }
+
+        .circle.pink {
+            background: rgb(0, 156, 68);
+        }
+
+        .circle.blue {
+            background: rgb(0, 156, 68);
+        }
+
+        .circle img {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .chat-options {
+            display: flex;
+            gap: 10px;
+        }
+
+        .chat-box {
+            flex: 1;
+            background: #333;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .chat-box .icon-circle {
+            background: #91fd91;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 0 auto 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .chat-box p {
+            margin: 0;
+        }
+
+        /* History Section */
+        .history {
+            flex: 1;
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .history-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .see-all {
+            font-size: 12px;
+            text-decoration: none;
+            color: hsl(147, 100%, 78%);
+        }
+
+        .see-all:hover {
+            text-decoration: underline;
+        }
+
+        .history ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .history li {
+            margin-bottom: 10px;
+            font-size: 14px;
+            background: #333;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        /* Image size */
+        .icon img {
+            width: 30px; /* Adjust width as needed */
+            height: 30px; /* Adjust height as needed */
+        }
+
+        .icon-circle img {
+            width: 30px; /* Adjust width as needed */
+            height: 30px; /* Adjust height as needed */
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Premium Plan Section -->
+        <div class="premium-plan">
+            <div class="premium-content">
+                <h2>Premium Plan</h2>
+                <p style="color: #2d852d;">Unlock Sundae's potentials and get all premium features</p>
+            </div>
+            <button class="upgrade-btn">Upgrade</button>
+            <img src="cb.png" alt="Robot" class="premium-robot">
+        </div>
+
+        <!-- Topics and History Section -->
+        <div class="main-content">
+            <!-- Topics Section -->
+            <div class="topics">
+                <h3>Topics</h3>
+                <div class="topic-icons">
+                    <div class="icon">
+                        <a href="normalChat.html">
+                            <div class="circle green"><img src="msg.png" alt="Health Icon"></div>
+                            <p>Daily Life</p>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="health.html">
+                            <div class="circle green">
+                                <img src="health png.png" alt="Health Icon">
+                            </div>
+                            <p>Health</p>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="develop.html">
+                            <div class="circle blue"><img src="dvl png.png" alt="Health Icon"></div>
+                            <p>Develop</p>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="business.html">
+                            <div class="circle green"><img src="bus png.png" alt="Health Icon"></div>
+                            <p>Business</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="chat-options">
+                    <div class="chat-box">
+                        <div class="icon-circle">
+                            <a href="NormalChat.html">
+                                <img src="msg.png" alt="Mic Icon" style="width: 40px; height: auto;">
+                            </a>
+                        </div>
+                        <p>Chat with ChatMate</p>
+                    </div>
+                    <div class="chat-box">
+                        <div class="icon-circle">
+                            <a href="talk.html">
+                                <img src="mic png.png" alt="Mic Icon" style="width: 40px; height: auto;">
+                            </a>
+                        </div>
+                        <p>Talk with ChatMate</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- History Section -->
+            <div class="history">
+                <div class="history-header">
+                    <h3>History</h3>
+                    <a href="history.html" class="see-all">See all</a>
+                </div>
+                <ul>
+                    <li>How can I make perfect pasta?</li>
+                    <li>How can I make perfect pasta?</li>
+                    <li>What are the best websites for designers?</li>
+                    <li>Best beaches on earth?</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
